@@ -1,0 +1,37 @@
+{
+   "name": "corona-soli-api",
+   "version": "1.0.0",
+   "description": "",
+   "main": "src/index.ts",
+   "scripts": {
+      "dev": "nodemon",
+      "serve": "NODE_ENV=production ts-node ./src/index.ts",
+      "build": "NODE_ENV=production webpack --mode=production --config webpack.config.ts",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "license": "MIT",
+   "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "express-jwt": "^5.3.1",
+      "jsonwebtoken": "^8.5.1",
+      "mailgun-js": "^0.22.0",
+      "reflect-metadata": "^0.1.13",
+      "shortid": "^2.2.15",
+      "sqlite3": "^4.1.1",
+      "typeorm": "0.2.24"
+   },
+   "devDependencies": {
+      "@types/express": "^4.17.3",
+      "@types/node": "^13.9.1",
+      "@types/webpack": "^4.41.7",
+      "nodemon": "^2.0.2",
+      "prettier": "1.19.1",
+      "ts-loader": "^6.2.1",
+      "ts-node": "8.6.2",
+      "typescript": "3.8.3",
+      "webpack": "^4.42.0",
+      "webpack-cli": "^3.3.11",
+      "webpack-node-externals": "^1.7.2"
+   }
+}
